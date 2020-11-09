@@ -18,7 +18,7 @@ Folder EmployeeSQL: contains the codes that used for the assignment.
     
     -Bonus.ipynb : Optional assignment
         - For this apporach, I used sqlalchemy to connect pandas with SQL db.
-        - Instruction provided a code was used as a foundation to create the connection with database
+        - Instruction provided code was used as a foundation to create the connection with database
                 from sqlalchemy import create_engine
                 engine = create_engine('postgresql://localhost:5432/<your_db_name>')
                 connection = engine.connect()
