@@ -1,5 +1,10 @@
 # sql-challenge
 
+The assignment required me to display skills for Data Engineering and Data Analysis.
+
+In this challenge I had to utilize PostgreSQL skills to create database and map the relationships between each tables. With my SQL knowledge I had make SQL query calls for data from the correspodning tables and display the ability to merge database from multiple sources. For Bonus I had to utilize my SQLAlchemy to connect the database inorder for me use pandas to create a dataframe and matplotlib for data visualization
+
+
 Folder Instruction: 
     - Instruction/data : contains all the csv that that were converted in Database in postgres
 
