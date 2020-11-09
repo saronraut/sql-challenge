@@ -41,6 +41,7 @@ Epilogue: "Search You ID"
      - Using the Employee ID, I was able to pull the information on postgres SQL database: 
      - The code snippets are: 
         Select * From employees where emp_no = 499942:
+        
         Select * From salaries where emp_no = 499942:
     
     - Our name is April Foolsday
