@@ -32,9 +32,8 @@ Folder EmployeeSQL: contains the codes that used for the assignment.
         - Histogram.png : Histogram part of bonus solution. Graph displays the range of salary
             - Code can be found in Bonus.ipynb
     
-    - ERD.svg : ERD copy. saved a svg copy instead. website didn't allow export as png.  
-        - copy of the Entity Relationship Diagram that was created in http://www.quickdatabasediagrams.com 
-
+    - QuickDBD-export.png : DBD for the table relationships
+        - https://app.quickdatabasediagrams.com/#/d/9KnVjV
         
 
 Epilogue: "Search You ID" 
