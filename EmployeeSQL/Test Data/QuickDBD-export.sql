@@ -5,19 +5,23 @@
 
 CREATE TABLE "departments" (
     "dept_no" varchar(30)   NOT NULL,
-    "dept_name" varchar(30)   NOT NULL
+    "dept_name" varchar(30)   NOT NULL,
+    CONSTRAINT "pk_departments" PRIMARY KEY (
+        "dept_no"
+     )
 );
 
 CREATE TABLE "dept_emp" (
     "emp_no" int   NOT NULL,
-    "dept_no" varchar(30)   NOT NULL,
-    PRIMARY KEY ("emp_no")
+    "dept_no" int   NOT NULL
 );
 
 CREATE TABLE "dept_manager" (
-    "dept_no" varchar(30)   NOT NULL,
+    "dept_no" int   NOT NULL,
     "emp_no" int   NOT NULL,
-    PRIMARY KEY ("emp_no")
+    CONSTRAINT "pk_dept_manager" PRIMARY KEY (
+        "dept_no"
+     )
 );
 
 CREATE TABLE "employees" (
@@ -28,18 +32,22 @@ CREATE TABLE "employees" (
     "last_name" varchar(30)   NOT NULL,
     "sex" varchar(30)   NOT NULL,
     "hire_date" date   NOT NULL,
-    PRIMARY KEY ("emp_no")
+    CONSTRAINT "pk_employees" PRIMARY KEY (
+        "emp_no"
+     )
 );
 
 CREATE TABLE "salaries" (
     "emp_no" int   NOT NULL,
-    "salary" int   NOT NULL,
-    PRIMARY KEY ("emp_no")
+    "salary" int   NOT NULL
 );
 
 CREATE TABLE "titles" (
     "title_id" varchar(30)   NOT NULL,
-    "title" varchar(30)   NOT NULL
+    "title" varchar(30)   NOT NULL,
+    CONSTRAINT "pk_titles" PRIMARY KEY (
+        "title_id"
+     )
 );
 
 ALTER TABLE "departments" ADD CONSTRAINT "fk_departments_dept_no" FOREIGN KEY("dept_no")
